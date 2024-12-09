@@ -260,7 +260,6 @@ void print_winner(void)
 
             }
 
-
         }
 
         if(valid) {
