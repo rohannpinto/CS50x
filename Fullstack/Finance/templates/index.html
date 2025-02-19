@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr>
+                <th>Stock Name</th>
+                <th>Stock Symbol</th>
+                <th>Stock Price</th>
+                <th>Stock Total Value</th>
+                <th>Cash Balance</th>
+                <th>Grand Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- TODO: Loop through the database entries to display them in this table -->
+            {% for row in rows %}
+                <tr>
+                    <td>
+                        {{row.name}}
+                    </td>
+                    <td>
+                        {{row.symbol}}
+                    </td>
+                    <td>
+                        {{row.price}}
+                    </td>
+                    <td>
+                        {{row.total}}
+                    </td>
+                    <td>
+                        {{row.cash}}
+                    </td>
+                    <td>
+                        {{row.grandtotal}}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

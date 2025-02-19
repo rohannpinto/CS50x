@@ -1,0 +1,120 @@
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode .accordion-body {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode .accordion-header,
+.dark-mode .accordion-button {
+  background-color: black;
+  color: white; 
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul, ol {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+li {
+padding-bottom: 5px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.highlight {
+  background-color: #fff8dc;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  font-size: 0.8em;
+}
+
+
+.collapse {
+    &:not(.show) {
+      display: none;
+    }
+  }
+
+  .collapsing {
+    height: 0;
+    overflow: hidden;
+    @include transition($transition-collapse);
+
+    &.collapse-horizontal {
+      width: 0;
+      height: auto;
+      @include transition($transition-collapse-width);
+    }
+  }

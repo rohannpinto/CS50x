@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <table>
+        <thead>
+            <tr>
+                <th>Type</th>
+                <th>Stock Symbol</th>
+                <th>Transaction Amount</th>
+                <th>Share Quantity</th>
+                <th>Date & Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- TODO: Loop through the database entries to display them in this table -->
+            {% for row in rows %}
+                <tr>
+                    <td>
+                        {{row.type}}
+                    </td>
+                    <td>
+                        {{row.symbol}}
+                    </td>
+                    <td>
+                        {{row.amount}}
+                    </td>
+                    <td>
+                        {{row.shares}}
+                    </td>
+                    <td>
+                        {{row.datetime}}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,30 @@
+HTML TAGS
+Req - Use at least ten (10) distinct HTML tags besides <html>, <head>, <body>, and <title>.
+Using some tag (e.g., <p>) multiple times still counts as just one (1) of those ten!
+1. div
+2. h1
+3. h2
+4. ul
+5. li
+6. hr
+7. a
+8. p
+9. ol
+10. h3
+
+CSS TAGS:
+Req - Have at least one stylesheet file of your own creation, styles.css, which uses at least five (5) different CSS selectors
+(e.g. tag (example), class (.example), or ID (#example)), and within which you use a total of at least five (5) different CSS properties, such as font-size, or margin; and
+1. All generic tags have at least one property
+
+
+JAVASCRIPT USAGE:
+Req - Integrate one or more features of JavaScript into your site to make your site more interactive.
+For example, you can use JavaScript to add alerts, to have an effect at a recurring interval, or to add interactivity to buttons, dropdowns, or forms. Feel free to be creative!
+1. Dark Mode button
+
+BOOTSTRAP USAGE:
+Req - Integrate one or more features from Bootstrap into your site.
+See Bootstrap’s documentation to get started.
+In particular, you might find some of Bootstrap’s components of interest.
+1. Accordion
